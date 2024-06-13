@@ -1,0 +1,64 @@
+/* Style for menu section */
+#menu {
+    padding: 50px 0; /* Add padding as needed */
+}
+
+/* Style for menu filters */
+#menu-filters {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Ensure items don't wrap to the next line */
+}
+
+#menu-filters li {
+    cursor: pointer;
+    padding: 8px 12px; /* Adjust padding for desktop view */
+    margin: 4px; /* Adjust margin for better spacing */
+    font-size: 14px; /* Adjust font size for desktop view */
+    font-weight: bold;
+    color: #fbfbfb; /* Adjust color as needed */
+    border-radius: 5px; /* Adjust border radius as needed */
+    background-color: transparent; /* Set background color as transparent */
+    transition: color 0.3s ease; /* Add transition effect for color */
+}
+
+/* Media query for smaller screens (up to 768px) */
+@media (max-width: 768px) {
+    #menu-filters {
+        justify-content: flex-start; /* Align items to the start for better scrolling */
+    }
+
+    #menu-filters li {
+        padding: 4px 6px; /* Further reduce padding for smaller screens */
+        font-size: 12px; /* Further reduce font size for smaller screens */
+        margin: 2px; /* Adjust margin for better spacing */
+    }
+}
+
+#menu-filters li:hover,
+#menu-filters li.active {
+    color: #cda45e; /* Adjust hover/active text color as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add slight shadow box on hover/active */
+}
+
+#menu-filters li.selected {
+    /* Apply styles for the selected filter */
+    background-color: #cda45e;
+    color: #fff;
+}
+
+#menu-filters li.filter-active.selected {
+    /* Apply styles for the selected and active filter */
+    background-color: #cda45e;
+    color: #fff;
+}
+
+#menu-filters li.filter-active {
+    /* Apply styles for the active filter */
+    background-color: #f3f3f3;
+    color: #555;
+}

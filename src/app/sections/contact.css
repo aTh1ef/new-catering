@@ -1,0 +1,275 @@
+/*--------------------------------------------------
+# Contact
+--------------------------------------------------*/
+.contact {
+    position: relative;
+    padding: 60px 0;
+    background: #1a1a1a;
+    color: #f5f5f5;
+    overflow: hidden;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 0;
+    opacity: 0.3;
+    pointer-events: none;
+    background-image: radial-gradient(#cda45e 2px, transparent 2px),
+                      radial-gradient(#cda45e 2px, transparent 2px);
+    background-size: 100px 100px;
+    animation: twinkling-stars 2s infinite ease-in-out alternate;
+    background-position: 0 0, 50px 50px;
+}
+
+@keyframes twinkling-stars {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+.contact iframe {
+    z-index: 1; /* Higher z-index */
+    position: relative; /* Ensure iframe is positioned relative to other content */
+}
+
+.contact .info {
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+.contact .info .info-box {
+    background: #2a2a2a;
+    padding: 10px; /* Reduced padding */
+    border-radius: 5px; /* Smaller border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Smaller box shadow */
+    border: 1px solid #cda45e;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 200px; /* Reduced width */
+    text-align: center;
+}
+
+.contact .info .info-box:hover {
+    transform: translateY(-5px); /* Reduced translateY */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Larger box shadow */
+    border-color: #d3af71;
+}
+
+.contact .info .info-box i {
+    font-size: 24px; /* Smaller icon size */
+    color: #cda45e;
+    margin-bottom: 5px; /* Reduced margin */
+}
+
+.contact .info .info-box h4 {
+    font-size: 16px; /* Smaller font size */
+    font-weight: 500;
+    margin-bottom: 5px; /* Reduced margin */
+    font-family: 'Poppins', sans-serif;
+    color: #f5f5f5;
+}
+
+.contact .info .info-box p {
+    font-size: 12px; /* Smaller font size */
+    color: #c7c2b8;
+    margin-bottom: 0;
+}
+
+
+.contact .contact-form {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.contact .contact-form .form-group {
+    padding-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .contact-form .form-group input,
+.contact .contact-form .form-group textarea {
+    width: calc(100% - 20px);
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #625b4b;
+    background: #0c0b09;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact .contact-form .form-group input:focus,
+.contact .contact-form .form-group textarea:focus {
+    border-color: #cda45e;
+    color: #cda45e;
+}
+
+.contact .contact-form .form-group .validate {
+    display: none;
+    color: red;
+    margin: 0 0 15px 0;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.contact .contact-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.contact .contact-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.contact .contact-form .loading {
+    display: none;
+    text-align: center;
+    padding: 15px;
+}
+
+.contact .contact-form .loading:before {
+    content: '';
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #cda45e;
+    border-top-color: #1a1814;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+}
+
+.contact .contact-form button[type='submit'] {
+    background: #cda45e;
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.contact .contact-form button[type='submit']:hover {
+    background: #d3af71;
+}
+
+@-webkit-keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Additional styling for better aesthetics */
+.contact .contact-form .form-group-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact .contact-form .form-group-row .form-group {
+    flex: 0 0 48%;
+}
+
+.contact .contact-form .form-group-row .form-group input {
+    width: 100%;
+}
+
+.contact .contact-form .form-group textarea {
+    width: calc(100% - 20px);
+    margin: 5px auto;
+    padding: 10px 12px;
+}
+
+/* Make placeholder text white */
+.contact .contact-form input::placeholder,
+.contact .contact-form textarea::placeholder {
+    color: #fff;
+}
+
+.contact .contact-form input::-webkit-input-placeholder,
+.contact .contact-form textarea::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.contact .contact-form input::-moz-placeholder,
+.contact .contact-form textarea::-moz-placeholder {
+    color: #fff;
+}
+
+.contact .contact-form input:-ms-input-placeholder,
+.contact .contact-form textarea:-ms-input-placeholder {
+    color: #fff;
+}
+
+.contact .contact-form input::-ms-input-placeholder,
+.contact .contact-form textarea::-ms-input-placeholder {
+    color: #fff;
+}
+
+/* Add to your contact.css */
+
+/* Styling for the status container and messages */
+.status-container {
+    margin-top: 15px;
+  }
+  
+  .status-message {
+    display: inline-block;
+    background: #cda45e;
+    color: #fff;
+    padding: 10px 35px;
+    border-radius: 50px;
+    margin-top: 10px;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .status-message.loading {
+    background: #f0ad4e;
+  }
+  
+  .status-message.success {
+    background: #18d26e;
+  }
+  
+  .status-message.error {
+    background: #ed3c0d;
+  }
+  
+  /* Optional: Add a little more styling for better visuals */
+  .status-message {
+    font-weight: bold;
+    font-size: 1em;
+  }

@@ -1,0 +1,179 @@
+/*---------------------------------------------------
+# Booking an Event
+-----------------------------------------------------*/
+
+.book-an-event {
+    position: relative;
+    padding: 60px 0;
+    background: #1a1a1a;
+    color: #f5f5f5;
+    overflow: hidden;
+    text-align: center;
+}
+
+.book-an-event .container {
+    max-width: 1350px; /* Keeping the container size the same as before */
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.book-an-event .section-title {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.book-an-event .booking-form {
+    background: #2a2a2a;
+    padding: 30px;
+    box-shadow: 0px 0 30px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    width: 100%; /* This will make the form span the entire width */
+}
+
+.book-an-event .booking-form .form-group {
+    padding-bottom: 8px;
+}
+
+.book-an-event .booking-form .error-message {
+    color: #fff;
+    background: #cda45e;
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.book-an-event .booking-form .error-message br + br {
+    margin-top: 25px;
+}
+
+.book-an-event .booking-form .sent-message {
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.book-an-event .booking-form .loading {
+    text-align: center;
+    padding: 15px;
+}
+
+.book-an-event .booking-form .loading:before {
+    content: '';
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #cda45e;
+    border-top-color: #1a1814;
+    animation: animate-loading 1.5s linear infinite;
+}
+
+@keyframes animate-loading {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.book-an-event .booking-form input,
+.book-an-event .booking-form textarea {
+    border-radius: 5px;
+    box-shadow: none;
+    font-size: 14px;
+    background: #0c0b09;
+    border: 1px solid #625b4b;
+    color: white;
+}
+
+.book-an-event .booking-form input[type='date'],
+.book-an-event .booking-form input[type='time'] {
+    color: #a49b89;
+}
+
+.book-an-event .booking-form input::placeholder,
+.book-an-event .booking-form textarea::placeholder {
+    color: #a49b89;
+}
+
+.book-an-event .booking-form input:focus,
+.book-an-event .booking-form textarea:focus {
+    border-color: #cda45e;
+}
+
+.book-an-event .booking-form input {
+    height: 44px;
+    padding: 10px;
+}
+
+.book-an-event .booking-form textarea {
+    padding: 10px 12px;
+    height: auto;
+}
+
+.book-an-event .booking-form button[type='submit'] {
+    background: #cda45e;
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: background 0.4s;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.book-an-event .booking-form button[type='submit']:hover {
+    background: #d3af71;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .book-an-event .container {
+        padding: 0 15px;
+    }
+
+    .booking-form .row {
+        flex-direction: column;
+    }
+
+    .booking-form .col-lg-4,
+    .booking-form .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .booking-form .text-center {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Twinkling stars background */
+@keyframes twinkling-stars {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+.book-an-event::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 0;
+    opacity: 0.3;
+    pointer-events: none;
+    background-image: radial-gradient(#cda45e 2px, transparent 2px),
+                      radial-gradient(#cda45e 2px, transparent 2px);
+    background-size: 100px 100px;
+    animation: twinkling-stars 2s infinite ease-in-out alternate;
+    background-position: 0 0, 50px 50px;
+}
