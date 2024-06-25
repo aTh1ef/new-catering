@@ -23,7 +23,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ item }) => {
 
     return (
         <div className="menu-item">
-            <img
+            <Image
                 src={item.imageUrl}
                 alt={item.name}
                 className="menu-img"
