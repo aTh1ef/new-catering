@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Image from 'next/image';
 import './menuItem.css';
 
 interface MenuItemProps {
@@ -23,14 +22,12 @@ const MenuItem: React.FC<MenuItemProps> = ({ item }) => {
 
     return (
         <div className="menu-item">
-            <div className="menu-img" onClick={handleImageClick}>
-                <Image
-                    src={item.imageUrl}
-                    alt={item.name}
-                    layout="fill"
-                    objectFit="cover"
-                />
-            </div>
+            <img
+                src={item.imageUrl}
+                alt={item.name}
+                className="menu-img"
+                onClick={handleImageClick}
+            />
             <div className="small-line"></div>
             <div className="menu-content">
                 <span className="menu-name">{item.name}</span>
@@ -38,13 +35,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ item }) => {
             </div>
             {isImageOpen && (
                 <div className="popup" onClick={closeImage}>
-                    <Image
-                        src={item.imageUrl}
-                        alt={item.name}
-                        layout="fill"
-                        objectFit="cover"
-                        className="popup-img"
-                    />
+                    <img src={item.imageUrl} alt={item.name} className="popup-img" />
                 </div>
             )}
         </div>
