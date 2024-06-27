@@ -8,6 +8,9 @@ export default function Hero() {
   useEffect(() => {
     const video = document.getElementById('hero-video') as HTMLVideoElement;
     if (video) {
+      video.setAttribute('playsinline', '');
+      video.setAttribute('muted', '');
+      
       const playPromise = video.play();
       if (playPromise !== undefined) {
         playPromise.catch(() => {
@@ -17,11 +20,26 @@ export default function Hero() {
         });
       }
     }
+
+    // Adding event listener for user interaction
+    const handleUserInteraction = () => {
+      if (video && video.paused) {
+        video.play().catch(() => {
+          video.muted = true;
+          video.play();
+        });
+      }
+    };
+
+    document.addEventListener('click', handleUserInteraction);
+    return () => {
+      document.removeEventListener('click', handleUserInteraction);
+    };
   }, []);
 
   return (
     <section id="hero" className="d-flex align-items-center justify-content-center">
-      <video id="hero-video" autoPlay muted loop playsInline>
+      <video id="hero-video" autoPlay muted loop playsInline poster="/assets/images/w.jpg" >
         <source src="/assets/videos/winefinal.mp4" type="video/mp4" />
         <source src="/assets/videos/winefinal.webm" type="video/webm" />
         <source src="/assets/videos/winefinal.ogv" type="video/ogg" />

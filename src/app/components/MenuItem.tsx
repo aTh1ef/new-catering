@@ -23,12 +23,15 @@ const MenuItem: React.FC<MenuItemProps> = ({ item }) => {
 
     return (
         <div className="menu-item">
-            <Image
-                src={item.imageUrl}
-                alt={item.name}
-                className="menu-img"
-                onClick={handleImageClick}
-            />
+            <div className="menu-img-container" onClick={handleImageClick}>
+                <Image
+                    src={item.imageUrl}
+                    alt={item.name}
+                    className="menu-img"
+                    width={70}
+                    height={70}
+                />
+            </div>
             <div className="small-line"></div>
             <div className="menu-content">
                 <span className="menu-name">{item.name}</span>
@@ -36,7 +39,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ item }) => {
             </div>
             {isImageOpen && (
                 <div className="popup" onClick={closeImage}>
-                    <Image src={item.imageUrl} alt={item.name} className="popup-img" />
+                    <Image src={item.imageUrl} alt={item.name} className="popup-img" width={800} height={800} />
                 </div>
             )}
         </div>

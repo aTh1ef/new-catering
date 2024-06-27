@@ -155,7 +155,6 @@ const menuData: MenuData[] = [
         category: 'chicken',
         imageUrl: '/assets/images/menu/chicken lollipop.jpg',
     },
-    
     {
         id: 25,
         name: 'Chicken Ghee Roast',
@@ -167,7 +166,6 @@ const menuData: MenuData[] = [
         name: 'Lemon Chicken',
         category: 'chicken',
         imageUrl: '/assets/images/menu/lemon chicken.jpg',
-        
     },
     {
         id: 27,
@@ -259,7 +257,6 @@ const menuData: MenuData[] = [
         category: 'prawn',
         imageUrl: '/assets/images/menu/prawns lollipop.jpg',
     },
-
     {
         id: 42,
         name: 'Prawns Pepper',
@@ -362,22 +359,224 @@ const menuData: MenuData[] = [
         category: 'icecreams',
         imageUrl: '/assets/images/menu/fruitsalad.avif',
     },
+    // Starters
+    {
+        id: 59,
+        name: 'Chicken Hariyali Kebab',
+        category: 'starters',
+        imageUrl: '/assets/images/menu/chicken hariyali kebab.jpg',
+    },
+    {
+        id: 60,
+        name: 'Chicken Kebab',
+        category: 'starters',
+        imageUrl: '/assets/images/menu/chicken kebab.jpg',
+    },
+    {
+        id: 61,
+        name: 'Veg Spring Roll',
+        category: 'starters',
+        imageUrl: '/assets/images/menu/veg spring roll.jpg',
+    },
+    {
+        id: 62,
+        name: 'Chicken Spring Roll',
+        category: 'starters',
+        imageUrl: '/assets/images/menu/chicken spring roll.jpg',
+    },
+    {
+        id: 63,
+        name: 'French Fries',
+        category: 'starters',
+        imageUrl: '/assets/images/menu/french fries.webp',
+    },
+    {
+        id: 64,
+        name: 'Cheese Pizza Sticks',
+        category: 'starters',
+        imageUrl: '/assets/images/menu/cheese pizza sticks.jpg',
+    },
+    {
+        id: 65,
+        name: 'Chicken Popcorn',
+        category: 'starters',
+        imageUrl: '/assets/images/menu/chicken popcorn.jpg',
+    },
+    {
+        id: 66,
+        name: 'Chicken Nuggets',
+        category: 'starters',
+        imageUrl: '/assets/images/menu/chicken nuggets.jpg',
+    },
+    {
+        id: 67,
+        name: 'Lollipop Chicken',
+        category: 'starters',
+        imageUrl: '/assets/images/menu/lollipop chicken.jpg',
+    },
+    {
+        id: 68,
+        name: 'Chicken Tikka',
+        category: 'starters',
+        imageUrl: '/assets/images/menu/chicken tikka.webp',
+    },
+    {
+        id: 69,
+        name: 'Chicken Tikka Hariyali',
+        category: 'starters',
+        imageUrl: '/assets/images/menu/chicken tikka hariyali.jpg',
+    },
+    // Rice Items
+    {
+        id: 70,
+        name: 'Boiled Rice',
+        category: 'rice',
+        imageUrl: '/assets/images/menu/boiled rice.jpg',
+    },
+    {
+        id: 71,
+        name: 'White Rice',
+        category: 'rice',
+        imageUrl: '/assets/images/menu/white rice.jpg',
+    },
+    {
+        id: 72,
+        name: 'Ghee Rice',
+        category: 'rice',
+        imageUrl: '/assets/images/menu/ghee rice.jpg',
+    },
+    {
+        id: 73,
+        name: 'Curd Rice',
+        category: 'rice',
+        imageUrl: '/assets/images/menu/curd rice.jpg',
+    },
+    {
+        id: 74,
+        name: 'Tomato Rice',
+        category: 'rice',
+        imageUrl: '/assets/images/menu/tomato rice.jpeg',
+    },
+    {
+        id: 75,
+        name: 'Biryani Rice',
+        category: 'rice',
+        imageUrl: '/assets/images/menu/birayni rice.jpg',
+    },
+    {
+        id: 76,
+        name: 'Chicken Biryani',
+        category: 'rice',
+        imageUrl: '/assets/images/menu/chicken biryani.jpg',
+    },
+    {
+        id: 77,
+        name: 'Mutton Biryani',
+        category: 'rice',
+        imageUrl: '/assets/images/menu/mutton biryani-1.jpg',
+    },
+    {
+        id: 78,
+        name: 'Chicken Biryani Dum',
+        category: 'rice',
+        imageUrl: '/assets/images/menu/chicken biryani dum.avif',
+    },
+    {
+        id: 79,
+        name: 'Mutton Biryani Dum',
+        category: 'rice',
+        imageUrl: '/assets/images/menu/mutton biryani dum.jpeg',
+    },
+    {
+        id: 80,
+        name: 'Prawns Biryani',
+        category: 'rice',
+        imageUrl: '/assets/images/menu/prawns biryani.jpg',
+    },
+    {
+        id: 81,
+        name: 'Bangda Curry',
+        category: 'prawn',
+        imageUrl: '/assets/images/menu/Bangda Curry.jpg',
+    },
+    {
+        id: 82,
+        name: 'Bangda Tawa Fry',
+        category: 'prawn',
+        imageUrl: '/assets/images/menu/Bangda Tawa Fry.jpg',
+    },
+    {
+        id: 83,
+        name: 'Anjal Tawa Fry',
+        category: 'prawn',
+        imageUrl: '/assets/images/menu/Anjal Tawa Fry.jpg',
+    },
+    {
+        id: 84,
+        name: 'Silver Pomfret Fry',
+        category: 'prawn',
+        imageUrl: '/assets/images/menu/Silver Pomfret Fry.jpg',
+    },
+    {
+        id: 85,
+        name: 'Muru Tawa Fry',
+        category: 'prawn',
+        imageUrl: '/assets/images/menu/Muru Tawa Fry.jpg',
+    },{
+        id: 86,
+        name: 'Prawns Ghee Roast',
+        category: 'prawn',
+        imageUrl: '/assets/images/menu/Prawns Ghee Roast.jpg',
+    },
+    {
+        id: 87,
+        name: 'Crispy Prawns Deep Fry',
+        category: 'prawn',
+        imageUrl: '/assets/images/menu/Crispy Prawns Deep Fry.jpg',
+    },
+    {
+        id: 88,
+        name: 'Prawns Chilli',
+        category: 'prawn',
+        imageUrl: '/assets/images/menu/Prawns Chilli.jpg',
+    },
+    {
+        id: 89,
+        name: 'Marwai Sukka',
+        category: 'prawn',
+        imageUrl: '/assets/images/menu/Marwai Sukka.jpg',
+    },
+    {
+        id: 90,
+        name: 'Marwai Pulimunchi',
+        category: 'prawn',
+        imageUrl: '/assets/images/menu/Marwai Pulimunchi.webp',
+    },
+    {
+        id: 91,
+        name: 'Marwai Gassi',
+        category: 'prawn',
+        imageUrl: '/assets/images/menu/Marwai Gassi.jpg',
+    },
+
 ];
 
-// Example filter data
 const filters: Filter[] = [
-    { id: 1, name: 'Mutton', category: 'mutton', active: false },
-    { id: 2, name: 'Chicken', category: 'chicken', active: false },
-    { id: 3, name: 'Pork', category: 'pork', active: false },
-    { id: 4, name: 'Prawn', category: 'prawn', active: false },
-    { id: 5, name: 'Juices', category: 'juices', active: false },
-    { id: 6, name: 'Ice Creams', category: 'icecreams', active: false },
+    { id: 1, name: 'Starters', category: 'starters', active: false },
+    { id: 2, name: 'Mutton', category: 'mutton', active: false },
+    { id: 3, name: 'Chicken', category: 'chicken', active: false },
+    { id: 4, name: 'Pork', category: 'pork', active: false },
+    { id: 5, name: 'Seafood', category: 'prawn', active: false },
+    { id: 6, name: 'Rice Items', category: 'rice', active: false },
+    { id: 7, name: 'Juices', category: 'juices', active: false },
+    { id: 8, name: 'Ice Creams', category: 'icecreams', active: false },
+    
 ];
 
 export default function Menu() {
     const [items, setItems] = useState<MenuData[]>([]);
-    const [activeFilter, setActiveFilter] = useState<string>('mutton');
-    const [selectedFilter, setSelectedFilter] = useState<string>('mutton');
+    const [activeFilter, setActiveFilter] = useState<string>('starters');
+    const [selectedFilter, setSelectedFilter] = useState<string>('starters');
 
     useEffect(() => {
         setItems(menuData.filter(item => item.category === activeFilter));

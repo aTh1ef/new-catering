@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST='{"app\\\\components\\\\GalleryItem.tsx -> glightbox":{"id":6152,"files":["static/chunks/152.959f57f49ade9d29.js"]}}';
+self.__REACT_LOADABLE_MANIFEST="{\"app\\\\components\\\\GalleryItem.tsx -> glightbox\":{\"id\":\"app\\\\components\\\\GalleryItem.tsx -> glightbox\",\"files\":[\"static/chunks/_app-pages-browser_node_modules_glightbox_dist_js_glightbox_min_js.js\"]}}"

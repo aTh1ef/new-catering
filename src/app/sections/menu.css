@@ -16,9 +16,9 @@
 
 #menu-filters li {
     cursor: pointer;
-    padding: 8px 12px; /* Adjust padding for desktop view */
-    margin: 4px; /* Adjust margin for better spacing */
-    font-size: 14px; /* Adjust font size for desktop view */
+    padding: 6px 10px; /* Adjust padding for desktop view */
+    margin: 2px; /* Adjust margin for better spacing */
+    font-size: 12px; /* Adjust font size for desktop view */
     font-weight: bold;
     color: #fbfbfb; /* Adjust color as needed */
     border-radius: 5px; /* Adjust border radius as needed */
@@ -30,12 +30,22 @@
 @media (max-width: 768px) {
     #menu-filters {
         justify-content: flex-start; /* Align items to the start for better scrolling */
+        padding: 0 10px; /* Add padding to the sides for better spacing */
     }
 
     #menu-filters li {
-        padding: 4px 6px; /* Further reduce padding for smaller screens */
-        font-size: 12px; /* Further reduce font size for smaller screens */
-        margin: 2px; /* Adjust margin for better spacing */
+        padding: 4px 6px; /* Reduce padding for smaller screens */
+        font-size: 10px; /* Reduce font size for smaller screens */
+        margin: 1px; /* Adjust margin for better spacing */
+    }
+}
+
+/* Media query for very small screens (up to 480px) */
+@media (max-width: 480px) {
+    #menu-filters li {
+        padding: 2px 4px; /* Further reduce padding for very small screens */
+        font-size: 8px; /* Further reduce font size for very small screens */
+        margin: 0; /* Adjust margin for better spacing */
     }
 }
 

@@ -35,8 +35,8 @@ export default function Footer() {
                   Thokkotu <br />
                   Mangalore<br />
                   <br />
-                  <strong>Phone:</strong> 9164747590<br />
-                  <strong>Email:</strong> info@demo.com<br />
+                  <strong>Phone:</strong> 8494804283 / 9448517186<br />
+                  <strong>Email:</strong> telliscaterers@gmail.com<br />
                 </p>
                 <div className="social-links mt-3">
                   <a href="#" className="facebook">

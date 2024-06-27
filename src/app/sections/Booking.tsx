@@ -109,27 +109,25 @@ export default function Booking() {
                             />
                         </div>
                         <div className="col-lg-4 col-md-6 form-group mt-3">
-    <input
-        type="date"
-        name="date"
-        className="form-control input-w-auto"
-        value={text.date}
-        placeholder="Date"
-        onChange={handleTextChange}
-        onClick={(e) => e.currentTarget.showPicker()}
-    />
-</div>
-<div className="col-lg-4 col-md-6 form-group mt-3">
-    <input
-        type="time"
-        className="form-control"
-        name="time"
-        value={text.time}
-        placeholder="Time"
-        onChange={handleTextChange}
-        onClick={(e) => e.currentTarget.showPicker()}
-    />
-</div>
+                            <input
+                                type="date"
+                                name="date"
+                                className="form-control input-w-auto"
+                                value={text.date}
+                                onChange={handleTextChange}
+                                onClick={(e) => e.currentTarget.showPicker()}
+                            />
+                        </div>
+                        <div className="col-lg-4 col-md-6 form-group mt-3">
+                            <input
+                                type="time"
+                                className="form-control"
+                                name="time"
+                                value={text.time}
+                                onChange={handleTextChange}
+                                onClick={(e) => e.currentTarget.showPicker()}
+                            />
+                        </div>
                         <div className="col-lg-4 col-md-6 form-group mt-3">
                             <input
                                 type="number"
@@ -178,5 +176,3 @@ export default function Booking() {
         </section>
     );
 }
-
-

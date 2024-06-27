@@ -76,7 +76,7 @@ export default function Contact() {
               <div className="address info-box">
                 <i className="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>100 Your Street, Your City, State 1234</p>
+                <p>Tellis Caterers, Kapikkad 2nd Cross, Thokkottu, Mangalore, Pin-Code: 575022, Dakshina Kannada, Karnataka</p>
               </div>
 
               <div className="open-hours info-box">
@@ -92,13 +92,14 @@ export default function Contact() {
               <div className="email info-box">
                 <i className="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>telliscaterers@gnail.com</p>
+                <p>telliscaterers@gmail.com</p>
               </div>
 
               <div className="phone info-box">
                 <i className="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+61 1234 5678</p>
+                <p>8494804283</p>
+                <p>9448517186</p>
               </div>
             </div>
           </div>

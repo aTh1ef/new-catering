@@ -17,7 +17,7 @@ const whyUsData: WhyUsItem[] = [
   {
     id: 1,
     title: 'Decades of Experience',
-    content: `With over two decades of experience in catering, serving, and conducting events, we bring unmatched expertise to every occasion.`,
+    content: `With 20+ years in catering, serving, and event management, we offer unmatched expertise.`,
   },
   {
     id: 2,
