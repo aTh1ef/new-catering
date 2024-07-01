@@ -624,17 +624,18 @@ export default function Menu() {
 
                 
                 <div className="row menu-container" data-aos="fade-up" data-aos-delay="200">
-                    {activeFilter === 'prawn' && (
-                        <div className="seafood-highlight">
-                            We prepare all kinds of fish dishes according to the customer&apos;s request.
-                        </div>
-                    )}
-                    {items.length > 0 ? (
-                        items.map((item: MenuData) => <MenuItem key={item.id} item={item} />)
-                    ) : (
-                        <div>No items found</div>
-                    )}
-                </div>
+    {activeFilter === 'prawn' && (
+        <div className="seafood-highlight">
+            We prepare all kinds of fish dishes according to the customer&apos;s request.
+        </div>
+    )}
+    {items.length > 0 ? (
+        items.map((item: MenuData) => <MenuItem key={item.id} item={item} />)
+    ) : (
+        <div>No items found</div>
+    )}
+</div>
+
             </div>
         </section>
     );
