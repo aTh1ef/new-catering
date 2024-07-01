@@ -23,7 +23,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Tellis Caterers",
-  description: "Serving Exceptional Cuisine and Unmatched Hospitality Since 1998",
+  description: "Serving Since 1998",
 };
 
 export default function RootLayout({
@@ -33,6 +33,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/assets/images/favicon.ico" />
+      </head>
       <body className={playfair.className}>
         <Header />
         {children}

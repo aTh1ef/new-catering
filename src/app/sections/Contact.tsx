@@ -33,7 +33,7 @@ export default function Contact() {
     setStatus('loading');
 
     const emailParams = {
-      to_name: 'Ateef',
+      to_name: 'Tellis Caterers',
       from_name: formData.name,
       from_email: formData.email,
       subject: formData.subject,
@@ -42,10 +42,10 @@ export default function Contact() {
 
     try {
       await emailjs.send(
-        'service_x9a5etr', // Replace with your EmailJS service ID
-        'template_asg1rnb', // Replace with your EmailJS template ID
+        'service_tqs7678', // Replace with your EmailJS service ID
+        'template_7bykky5', // Replace with your EmailJS template ID
         emailParams,
-        'CWK5qhkMCj_SVoC0X' // Replace with your EmailJS public key
+        'OO8rVtjF_jiHjcsO8' // Replace with your EmailJS public key
       );
       setFormData(initialState);
       setStatus('success');
