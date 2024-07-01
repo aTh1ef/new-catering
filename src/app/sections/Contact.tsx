@@ -92,7 +92,7 @@ export default function Contact() {
               <div className="email info-box">
                 <i className="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>telliscaterers@gmail.com</p>
+                <p>telliscatererrs@gmail.com</p>
               </div>
 
               <div className="phone info-box">

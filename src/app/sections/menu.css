@@ -72,3 +72,10 @@
     background-color: #f3f3f3;
     color: #555;
 }
+
+.seafood-highlight {
+    font-weight: bold;
+    color: #cda45e;
+    padding: 10px 0;
+    text-align: center;
+}

@@ -241,9 +241,9 @@ const menuData: MenuData[] = [
     },
     {
         id: 39,
-        name: 'Pork Roast',
+        name: 'Pork Chilli Roast',
         category: 'pork',
-        imageUrl: '/assets/images/menu/pork roast.jpg',
+        imageUrl: '/assets/images/menu/pork chilli roast.jpg',
     },
     {
         id: 40,
@@ -558,6 +558,18 @@ const menuData: MenuData[] = [
         category: 'prawn',
         imageUrl: '/assets/images/menu/Marwai Gassi.jpg',
     },
+    {
+        id: 92,
+        name: 'Ice-Cream with Kashi Halwa',
+        category: 'icecreams',
+        imageUrl: '/assets/images/menu/kashi.jpg',
+    },
+    {
+        id: 93,
+        name: 'Ice-Cream with Carrot Halwa',
+        category: 'icecreams',
+        imageUrl: '/assets/images/menu/carrot.webp',
+    },
 
 ];
 
@@ -610,7 +622,13 @@ export default function Menu() {
                     </div>
                 </div>
 
+                
                 <div className="row menu-container" data-aos="fade-up" data-aos-delay="200">
+                    {activeFilter === 'prawn' && (
+                        <div className="seafood-highlight">
+                            We prepare all kinds of fish dishes according to the customer's request.
+                        </div>
+                    )}
                     {items.length > 0 ? (
                         items.map((item: MenuData) => <MenuItem key={item.id} item={item} />)
                     ) : (
